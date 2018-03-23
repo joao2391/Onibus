@@ -49,7 +49,7 @@ namespace Onibus.Controllers
             }
         }
 
-        //
+        
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
@@ -58,7 +58,7 @@ namespace Onibus.Controllers
             return View();
         }
 
-        //
+        
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
@@ -88,7 +88,7 @@ namespace Onibus.Controllers
             }
         }
 
-        //
+        
         // GET: /Account/VerifyCode
         [AllowAnonymous]
         public async Task<ActionResult> VerifyCode(string provider, string returnUrl, bool rememberMe)
@@ -101,7 +101,7 @@ namespace Onibus.Controllers
             return View(new VerifyCodeViewModel { Provider = provider, ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
 
-        //
+        
         // POST: /Account/VerifyCode
         [HttpPost]
         [AllowAnonymous]
