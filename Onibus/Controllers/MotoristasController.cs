@@ -6,6 +6,7 @@ using Onibus.Models;
 
 namespace Onibus.Controllers
 {
+    [Authorize]
     public class MotoristasController : Controller
     {
         private Context db = new Context();
